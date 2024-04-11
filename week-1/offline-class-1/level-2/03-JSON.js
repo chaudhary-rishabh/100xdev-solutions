@@ -8,6 +8,12 @@ function jsonMethods(jsonString) {
   // Stringifying JavaScript object to JSON string
   let jsonStringified = JSON.stringify(parsedObject);
   console.log("After JSON.stringify():", jsonStringified);
+
+  if (parsedObject === jsonStringified) {
+    console.log("true true true")
+  } else {
+    console.log("false false false")
+  }
 }
 
 // Example Usage for JSON Methods

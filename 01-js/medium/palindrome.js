@@ -4,6 +4,16 @@
 */
 
 function isPalindrome(str) {
+
+  if (str === "" || str === " ") {
+    return true;
+  }
+
+
+
+  if (str.toLowerCase().split(" ").reverse().join("") !== str.toLowerCase()) {
+    return false
+  }
   return true;
 }
 
