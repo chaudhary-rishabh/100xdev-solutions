@@ -1,14 +1,13 @@
 // Write a function that takes an array of numbers and returns the sum of all positive numbers in the array.
-
+// complexity 0(n);
 function sumArray(arr) {
     const sum = arr.reduce((acc, num) => {
-        if (num > 0 && num % 2 === 0) {
+        if (num % 2 === 0) {
             return acc + num;
         } else {
             return acc;
         }
     }, 0);
-
     return sum;
 }
 
