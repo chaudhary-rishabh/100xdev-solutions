@@ -39,8 +39,14 @@ const LoginOtp = () => {
                 {otpSend ? (
                         <>
                             <h3 style={{color:"white"}}> Login via OTP</h3>
-                            <input type='text'/>
-                            <button style={{ border: "none", padding: "10px", borderRadius: "20px" }} >Login</button>
+                            <div style={{display:"flex", alignItems:"center", justifyContent:"space-around"}}>
+                                <input style={{width:"20px", color:"white", textAlign:"center", backgroundColor:"black", border:"2px solid white", borderRadius:"10px", padding:"10px"}} type='text' autoFocus="false"/>
+                                <input style={{width:"20px", color:"white", textAlign:"center", backgroundColor:"black", border:"2px solid white", borderRadius:"10px", padding:"10px"}} type='text'/>
+                                <input style={{width:"20px", color:"white", textAlign:"center", backgroundColor:"black", border:"2px solid white", borderRadius:"10px", padding:"10px"}} type='text'/>
+                                <input style={{width:"20px", color:"white", textAlign:"center", backgroundColor:"black", border:"2px solid white", borderRadius:"10px", padding:"10px"}} type='text'/>
+                            </div>
+                            <br></br>
+                            <button style={{cursor:"pointer", border: "none", padding: "10px 25px", borderRadius: "20px" }} >Login</button>
                         </>
                             ) : 
                         <>

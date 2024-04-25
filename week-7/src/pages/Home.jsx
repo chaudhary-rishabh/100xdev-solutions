@@ -3,6 +3,7 @@ import Profile from '../components/Profile'
 import BackgroundChanger from '../components/BackgroundChanger'
 import ParaGenerator from '../components/ParaGenerator'
 import LoginOtp from '../components/LoginOtp'
+import OTPLoginForm from '../components/OtpLoginForm'
 
 const Home = () => {
   return (
@@ -10,7 +11,8 @@ const Home = () => {
         {/* <Profile/> */}
         {/* <BackgroundChanger/> */}
         {/* <ParaGenerator/> */}
-        <LoginOtp/>
+          <LoginOtp />
+          <OTPLoginForm/>
         
     </div>
   )
