@@ -22,9 +22,9 @@ function signJwt(username, password) {
 function verifyJwt(token) {
     let ans = true;
     try {
-       jwt.verify(token, jwtPassword);
+        jwt.verify(token, jwtPassword);
     } catch(e) {
-       ans = false;
+        ans = false;
     }
     return ans;
 }

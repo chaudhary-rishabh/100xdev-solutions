@@ -11,10 +11,21 @@ const app = express();
 // You have been given a numberOfRequestsForUser object to start off with which
 // clears every one second
 
+
 let numberOfRequestsForUser = {};
 setInterval(() => {
     numberOfRequestsForUser = {};
 }, 1000)
+
+app.use(function (req, res, next) {
+  numberOfRequestsForUser += 1;
+
+  if (numberOfRequestsForUser > 5) {
+    res.status(404).send("Request timed out. Please try again later.");
+  } else {
+    next();
+  }
+})
 
 app.get('/user', function(req, res) {
   res.status(200).json({ name: 'john' });
